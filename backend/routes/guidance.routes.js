@@ -32,31 +32,11 @@ router.get(
   guidanceController.getMahasiswaProgress
 );
 
-// Mahasiswa - Accept/Decline offered sessions
-router.post(
-  '/mahasiswa/sessions/:sessionId/accept',
-  authorize('MAHASISWA'),
-  guidanceController.acceptOfferedSession
-);
-
-router.post(
-  '/mahasiswa/sessions/:sessionId/decline',
-  authorize('MAHASISWA'),
-  guidanceController.declineOfferedSession
-);
-
 // Dosen routes
 router.get(
   '/dosen/sessions',
   authorize('DOSEN'),
   guidanceController.getDosenSessions
-);
-
-// NEW: Dosen offer session to mahasiswa
-router.post(
-  '/dosen/sessions/offer',
-  authorize('DOSEN'),
-  guidanceController.offerSession
 );
 
 router.post(
