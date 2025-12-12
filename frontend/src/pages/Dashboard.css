@@ -1,0 +1,43 @@
+/* Dashboard.css - Custom styles for Dashboard landing page */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link hover effects */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1890ff !important;
+}
+
+/* Card hover effects */
+.ant-card-hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effects */
+.ant-btn {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ant-typography h1 {
+    font-size: 32px !important;
+  }
+  
+  .ant-typography h2 {
+    font-size: 28px !important;
+  }
+  
+  .step-arrow {
+    display: none !important;
+  }
+}
+
